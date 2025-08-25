@@ -1,0 +1,191 @@
+/* =========================
+    ESTILOS GENERALES
+========================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Contenedor principal */
+.container-custom {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+/* =========================
+    NAVBAR (solo ajustes visuales)
+========================= */
+.navbar {
+    background-color: #343a40 !important;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #fff !important;
+}
+.navbar-nav .nav-link {
+    color: #ddd !important;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+}
+
+/* =========================
+    BOTONES
+========================= */
+.btn-custom {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* =========================
+        TARJETAS
+========================= */
+
+.contenedor {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.tarjetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.tarjeta {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding-bottom: 1rem;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tarjeta h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+}
+
+.tarjeta p {
+    font-size: 0.95rem;
+    color: #555;
+    padding: 0 1rem;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+
+/* =========================
+    FORMULARIOS
+========================= */
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+form label {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+form input, form textarea, form select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* =========================
+        FOOTER
+========================= */
+footer {
+    background-color: #343a40;
+    color: #ddd;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+    RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    .container-custom {
+        width: 95%;
+        padding: 1rem 0;
+    }
+}
+
+/* este es un ejemplo de grilla */
+
+.elemento{
+    grid-template-areas: 
+    "img1 img1 img2"
+    "img3 img3 img2"
+    ;
+}
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.img3 {
+    grid-area: img3;
+}
+/*cada par de comillas representa una fila en la grilla, y cada nombre de imagen representa una columna en esa fila*/

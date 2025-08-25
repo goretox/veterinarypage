@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto - Veterinaria Pareja</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="../CSS/styles.css" />
+</head>
+<body>
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Veterinaria Pareja</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link"  href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./products.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./ubicacion.html">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="seccion-encabezado">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para ayudarte con cualquier consulta.</p>
+    </header>
+
+    <!-- Formulario -->
+    <main class="contenedor">
+        <form class="formulario-contacto">
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu nombre" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="tuemail@correo.com" required>
+
+            <label>Mensaje</label>
+            <textarea placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Veterinaria Pareja - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

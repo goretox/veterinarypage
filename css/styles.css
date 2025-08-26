@@ -24,12 +24,28 @@ p {
 
 /* Contenedor principal */
 .container-custom {
+    flex: 1;
     width: 90%;
     max-width: 1200px;
     margin: auto;
     padding: 2rem 0;
 }
-
+.container-custom h2 {
+    margin-bottom: 0.5rem;
+}
+.container-custom p {
+    margin-bottom: 1.5rem;
+}
+.hero p,
+.container-custom p {
+    text-align: center;
+}
+.hero h1{
+    margin-bottom: 0.5rem;
+}
+.hero p {
+    margin-bottom: 1.5rem;
+}
 /* =========================
     NAVBAR (solo ajustes visuales)
 ========================= */
@@ -143,19 +159,13 @@ form input:focus, form textarea:focus, form select:focus {
 /* =========================
         FOOTER
 ========================= */
-footer {
+footer, .footer {
     background-color: #343a40;
     color: #ddd;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem;
-}
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-footer a:hover {
-    text-decoration: underline;
+    margin-top: auto;
+    width: 100%;
 }
 
 /* =========================
@@ -170,22 +180,3 @@ footer a:hover {
         padding: 1rem 0;
     }
 }
-
-/* este es un ejemplo de grilla */
-
-.elemento{
-    grid-template-areas: 
-    "img1 img1 img2"
-    "img3 img3 img2"
-    ;
-}
-.img1 {
-    grid-area: img1;
-}
-.img2 {
-    grid-area: img2;
-}
-.img3 {
-    grid-area: img3;
-}
-/*cada par de comillas representa una fila en la grilla, y cada nombre de imagen representa una columna en esa fila*/

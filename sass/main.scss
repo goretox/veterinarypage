@@ -1,0 +1,13 @@
+/* main.scss */
+
+/* Variables primero */
+@import 'variables';
+
+/* Base y estilos generales */
+@import 'base';
+@import 'navbar';
+@import 'buttons';
+@import 'cards';
+@import 'forms';
+@import 'footer';
+@import 'responsive';

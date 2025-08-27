@@ -1,0 +1,55 @@
+    /* =========================
+    TARJETAS
+    ========================= */
+    .contenedor {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    }
+
+    .tarjetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    }
+
+    .tarjeta {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding-bottom: 1rem;
+    }
+    .tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    }
+    .tarjeta h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+    }
+    .tarjeta p {
+    font-size: 0.95rem;
+    color: #555;
+    padding: 0 1rem;
+    }
+    .tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    /* Ejemplo de grilla con áreas */
+    .elemento {
+    display: grid;
+    grid-template-areas: 
+        "img1 img1 img2"
+        "img3 img3 img2";
+    gap: 1rem;
+    }
+    .img1 { grid-area: img1; }
+    .img2 { grid-area: img2; }
+    .img3 { grid-area: img3; }
